@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "totalResults": 7,
+    "articles": [
+        {
+            "source": {
+                "id": "cnn-es",
+                "name": "CNN Spanish"
+            },
+            "author": "Melissa Velásquez Loaiza",
+            "title": "¿Debería haber una categoría 6 para los huracanes? Estos científicos del clima dicen que sí",
+            "description": "La escala Saffir-Simpson actualmente va de la Categoría 1 a la 5; pero un estudio publicado este lunes en la revista Proceedings of the National Academy of Sciences, sugiere agregar una categoría 6 debido a que actualmente hay más combustible potencial para l…",
+            "url": "https://cnnespanol.cnn.com/2024/02/06/aumento-categoria-6-huracanes-saffir-simpson-trax/",
+            "urlToImage": "https://cnnespanol.cnn.com/wp-content/uploads/2024/02/huracanes-categoria-6.jpeg?quality=100&strip=info",
+            "publishedAt": "2024-02-06T07:40:46Z",
+            "content": "Qué son los huracanes y cómo se clasifican 1:19\r\n(CNN) -- A medida que aumentan las temperaturas y los océanos del mundo almacenan más combustible potencial para tormentas, un nuevo estudio propone a… [+2317 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Science News | Today's Latest Science Headlines | Reuters",
+            "description": "Find latest science news from every corner of the globe at Reuters.com, your online source for breaking international news coverage.",
+            "url": "https://www.reuters.com/science/",
+            "urlToImage": "https://www.reuters.com/pf/resources/images/reuters/reuters-default.webp?d=170",
+            "publishedAt": "2024-01-16T17:07:21.9316348Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "hacker-news",
+                "name": "Hacker News"
+            },
+            "author": null,
+            "title": "bigscience/T0pp · Hugging Face",
+            "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "url": "https://huggingface.co/bigscience/T0pp",
+            "urlToImage": "https://huggingface.co/front/thumbnails/v2-2.png",
+            "publishedAt": "2021-10-18T16:37:20.4140551Z",
+            "content": "Model Description\r\nT0* is a series of encoder-decoder models trained on a large set of different tasks specified in natural language prompts. We convert numerous English supervised datasets into prom… [+11344 chars]"
+        },
+        {
+            "source": {
+                "id": "hacker-news",
+                "name": "Hacker News"
+            },
+            "author": null,
+            "title": "Opening up a physics simulator for robotics",
+            "description": "As part of DeepMind's mission of advancing science, we have acquired the MuJoCo physics simulator and are making it freely available for everyone, to support research everywhere.",
+            "url": "https://deepmind.com/blog/announcements/mujoco",
+            "urlToImage": "https://lh3.googleusercontent.com/jVZ3VN7wwx2dSowqLmhqm0qAzAmcb-1t7ks3HiNnoHknihF5sl9VDEwuCNTSxfx8jFIi7mBQkvHUdnSKXSPgYLNpvCuE4YajJeMnrYA",
+            "publishedAt": "2021-10-18T16:07:20.4749314Z",
+            "content": "Advancing research everywhere with the acquisition of MuJoCo\r\nWhen you walk, your feet make contact with the ground. When you write, your fingers make contact with the pen. Physical contacts are what… [+1849 chars]"
+        },
+        {
+            "source": {
+                "id": "national-geographic",
+                "name": "National Geographic"
+            },
+            "author": "Nadia Drake",
+            "title": "How these feuding map-makers shaped our fascination with Mars",
+            "description": "One was an artist who loved space. His rival was a bold professional astronomer. Their race to map the red planet sparked decades of science and speculation.",
+            "url": "https://www.nationalgeographic.com/science/2021/02/how-feuding-map-makers-shaped-our-fascination-with-mars.html",
+            "urlToImage": "https://pmdvod.nationalgeographic.com/NG_Video/788/579/smpost_1612381336455.jpg",
+            "publishedAt": "2021-02-17T14:37:21.3706142Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "national-geographic",
+                "name": "National Geographic"
+            },
+            "author": null,
+            "title": "Episode 3: Why War Zones Need Science Too",
+            "description": "Undaunted by Yemen’s civil war, National Geographic explorer Ella Al-Shamahi searches on the island of Socotra for traces of the earliest known humans to leave Africa.",
+            "url": "https://www.nationalgeographic.com/podcasts/overheard/season-5/episode-3-why-war-zones-need-science.html",
+            "urlToImage": "https://www.nationalgeographic.com/content/dam/ngdotcom/rights-exempt/podcasts/Overheard/season5/episode3/nationalgeographic_2708459.jpg",
+            "publishedAt": "2021-02-17T14:37:20.2759318Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Graphics",
+            "title": "Reuters Graphics - Charts, Maps, Interactive Graphics and Videos",
+            "description": "The latest world news - politics, sports, culture, science and environment - from our graphics journalists in Singapore, Bangalore, London and New York.",
+            "url": "https://www.reuters.com/graphics/",
+            "urlToImage": "https://www.reuters.com/graphics/cdn/img/home.jpg",
+            "publishedAt": "2020-12-21T00:00:00Z",
+            "content": null
+        }
+    ]
+}
