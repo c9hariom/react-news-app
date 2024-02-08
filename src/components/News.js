@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
+import Loading from './Loading';
 
 export default class News extends Component {
 
@@ -17,18 +18,18 @@ export default class News extends Component {
 
 
   async componentDidMount(){
-    //console.log('cdm')
+    this.setState({loading: true});
     let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.key+'&pageSize='+this.state.pageSize+'&page=1';
     let data = await fetch(url);
     let parsedData = await data.json();
-    //console.log(parsedData.articles,typeof(parsedData.totalResults));
+    this.setState({loading: false});
     this.setState({articles : parsedData.articles});
     this.setState({totalPage: Math.ceil(parsedData.totalResults/this.state.pageSize)});
-    //console.log(parsedData,this.state.totalPage);
   }
 
   handleClick = async (para)=>{
     let url='';
+    this.setState({loading: true});
     if(para === 'prev' && this.state.pageNo>1){
       url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.key+'&pageSize='+this.state.pageSize+'&page='+(this.state.pageNo-1);
       let data = await fetch(url);
@@ -49,14 +50,16 @@ export default class News extends Component {
     let parsedData = await data.json();
     this.setState({articles : parsedData.articles});
     }
+    this.setState({loading: false});
   }
 
   render () {
     return (
       <div className='container'>
-        <h3>c9News - Top Headlines</h3>
+        <h3 className='text-center my-2'>c9News - Top Headlines</h3>
+        {this.state.loading?<Loading/>:""}
         <div className='row'>
-          {this.state.articles && this.state.articles.map(article => {
+          {!this.state.loading && this.state.articles && this.state.articles.map(article => {
                 if(article.description && article.title && article.urlToImage){
                     return (
                         <div className='col-md-4 my-3' key={article['url']}>
