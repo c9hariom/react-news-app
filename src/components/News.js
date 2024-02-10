@@ -6,25 +6,24 @@ export default class News extends Component {
 
   static defaultProps={
     country : 'us',
-    category: 'general'
+    category: 'general',
   }
 
   constructor () {
     super();
-    this.key='7ff22dbf91854124aaed0fd4670b0977';
     this.state = {
       articles: this.articles,
       loading: false,
       pageNo:1,
       totalPage:1,
-      pageSize:9
+      pageSize:9,
     }
   }
 
   async updateNews(){
     this.props.setProgress(20);
     this.setState({loading: true});
-    let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.key+'&pageSize='+this.state.pageSize+'&page='+this.state.pageNo+'&country='+this.props.country+'&category='+this.props.category;
+    let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.props.api_key+'&pageSize='+this.state.pageSize+'&page='+this.state.pageNo+'&country='+this.props.country+'&category='+this.props.category;
     let data = await fetch(url);
     this.props.setProgress(30);
     let parsedData = await data.json();
