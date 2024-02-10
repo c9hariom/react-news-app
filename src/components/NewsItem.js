@@ -3,11 +3,12 @@ import React, { Component } from 'react'
 export default class NewsItem extends Component {
   render () {
     
-    let {title,description,imageUrl,newsUrl,date,author} = this.props;
+    let {title,description,imageUrl,newsUrl,date,author,newsAuthor} = this.props;
 
     return (
       <div className=''>
-        <div className='card' >
+        <div className='card position-relative' >
+          <span className="badge bg-danger position-absolute translate-right top-0 end-0">{this.props.newsAuthor}</span>
           <img src={this.props.imageUrl} className='card-img-top' alt='' />
           <div className='card-body'>
             <h5 className='card-title'>{this.props.title}</h5>
