@@ -21,19 +21,23 @@ export default class News extends Component {
     }
   }
 
-
   async updateNews(){
+    this.props.setProgress(20);
     this.setState({loading: true});
     let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.key+'&pageSize='+this.state.pageSize+'&page='+this.state.pageNo+'&country='+this.props.country+'&category='+this.props.category;
     let data = await fetch(url);
+    this.props.setProgress(30);
     let parsedData = await data.json();
     this.setState({loading: false});
+    this.props.setProgress(60);
     this.setState({articles : parsedData.articles});
     this.setState({totalPage: Math.ceil(parsedData.totalResults/this.state.pageSize)}); 
+    this.props.setProgress(100);
   }
 
   async componentDidMount(){
    this.updateNews();
+   document.title=this.props.category.charAt(0).toUpperCase()+this.props.category.slice(1)+' News - Top Headlines | c9News';
   }
 
   handleClick = async (para)=>{
