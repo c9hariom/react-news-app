@@ -7,6 +7,7 @@ import {BrowserRouter as Router,
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 import LoadingBar from 'react-top-loading-bar';
+import Footer from "./components/Footer";
 
 
 export default class App extends Component {
@@ -43,6 +44,7 @@ export default class App extends Component {
             <Route path='/about' element={<About setProgress={this.setProgress} />}></Route>
             <Route path='/contact' element={<ContactUs setProgress={this.setProgress} />}></Route>
           </Routes>   
+          <Footer/>
         </Router>
       </div>
     )

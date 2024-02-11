@@ -5,8 +5,8 @@ export class NavBar extends Component {
 
   render () {
     return (
-      <div>
-      <nav className='navbar navbar-expand-lg bg-body-tertiary' data-bs-theme="dark">
+      <div style={{marginBottom:'90px'}}>
+      <nav className='navbar fixed-top navbar-expand-lg bg-body-tertiary' data-bs-theme="dark">
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             c9News
@@ -29,11 +29,7 @@ export class NavBar extends Component {
                   Home
                 </Link>
               </li> */}
-              <li className='nav-item'>
-                <Link className='nav-link' to='/about'>
-                  About
-                </Link>
-              </li>
+              
               <li className='nav-item'>
                 <Link className='nav-link' to='/business'>
                   Business
