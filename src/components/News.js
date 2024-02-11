@@ -5,7 +5,7 @@ import Loading from './Loading';
 export default class News extends Component {
 
   static defaultProps={
-    country : 'us',
+    country : 'in',
     category: 'general',
   }
 
@@ -30,12 +30,13 @@ export default class News extends Component {
     this.setState({loading: false});
     this.props.setProgress(60);
     this.setState({articles : parsedData.articles});
-    this.setState({totalPage: Math.ceil(parsedData.totalResults/this.state.pageSize)}); 
-    this.props.setProgress(100);
+    this.setState({totalPage: Math.ceil(parsedData.totalResults/this.state.pageSize)});
+   this.props.setProgress(100);
   }
 
   async componentDidMount(){
-   this.updateNews();
+   await this.updateNews();
+   this.props.setProgress(100);
    document.title=this.props.category.charAt(0).toUpperCase()+this.props.category.slice(1)+' News - Top Headlines | c9News';
   }
 
